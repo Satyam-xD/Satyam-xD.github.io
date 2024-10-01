@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic - Satyam Katiyar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .academic-content {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 90%;
+            transition: transform 0.3s;
+        }
+
+        .academic-content:hover {
+            transform: scale(1.02);
+        }
+
+        .academic-content h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        .academic-content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .academic-content li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .academic-content button {
+            padding: 12px 25px;
+            border: none;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .academic-content button:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .academic-content h2 {
+                font-size: 2rem;
+            }
+
+            .academic-content li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="academic-content">
+        <h2>Academic Background</h2>
+        <ul>
+            <li><strong>Degree - Institution Name</strong> (Year - Year) <br> Description of your coursework, achievements, or projects.</li>
+            <li><strong>Degree - Institution Name</strong> (Year - Year) <br> Description of your coursework, achievements, or projects.</li>
+            <li><strong>Degree - Institution Name</strong> (Year - Year) <br> Description of your coursework, achievements, or projects.</li>
+        </ul>
+        <button onclick="window.history.back();">Go Back</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Satyam Katiyar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #2c3e50, #3498db); /* Gradient background */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .about-content {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 90%;
+            transition: transform 0.3s;
+        }
+
+        .about-content:hover {
+            transform: scale(1.02); /* Slightly enlarge on hover */
+        }
+
+        .about-content h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem; /* Increased font size */
+            color: var(--primary-color);
+        }
+
+        .about-content p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 1.1rem; /* Slightly larger text */
+        }
+
+        .about-content button {
+            padding: 12px 25px;
+            border: none;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem; /* Increased button text size */
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for button */
+        }
+
+        .about-content button:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .about-content h2 {
+                font-size: 2rem; /* Adjust for smaller screens */
+            }
+
+            .about-content p {
+                font-size: 1rem; /* Adjust for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>Hello! I'm Satyam Katiyar, a passionate developer with a love for creating innovative solutions. My journey in tech has led me through various projects, and I'm excited to continue growing and learning.</p>
+        <button onclick="window.history.back();">Go Back</button>
+    </div>
+</body>
+</html>
